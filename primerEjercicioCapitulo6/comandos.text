@@ -1,0 +1,46 @@
+docker rmi -f 69c3efb2ac62  borrar la imagen    
+                                                                                                                                                          docker:desktop-linux
+docker build -t cap6web:latest . 
+
+ls
+
+docker rmi -f <id de la imagen>
+
+
+docker build .
+
+PS C:\Alfredo\cursos\docker y Kubernetes\docker platzy\primerEjercicioCapitulo6> docker images
+REPOSITORY                                TAG                                                                           IMAGE ID       CREATED          SIZE
+cap6web                                   latest                                                                        7dd5a5837799   12 minutes ago   279MB
+anogueraru/practica12                     latest                                                                        62482e7cb9f4   5 days ago       1.63GB
+mongo-node                                latest                                                                        aa28195d716e   5 days ago       1.64GB
+anogueraru/mongo-node                     latest                                                                        b546dff75d58   5 days ago       1.64GB
+
+                                                                    
+PS C:\Alfredo\cursos\docker y Kubernetes\docker platzy\primerEjercicioCapitulo6> docker ps
+CONTAINER ID   IMAGE                                 COMMAND                  CREATED      STATUS       PORTS                                                                                                                                  NAMES
+7906cc48fff1   gcr.io/k8s-minikube/kicbase:v0.0.46   "/usr/local/bin/entr…"   7 days ago   Up 3 hours   127.0.0.1:53915->22/tcp, 127.0.0.1:53916->2376/tcp, 127.0.0.1:53913->5000/tcp, 127.0.0.1:53914->8443/tcp, 127.0.0.1:53917->32443/tcp   minikube
+
+
+Para poner versiones
+
+docker build -t cap6web:1.0 .  ---> Creando un aimagen local con un tag para poder organizar las imagenes por versiones
+
+docker run -it --rm -d -p 8080:80 --name web cap6web  ---> Creando un contenedor dockel local
+
+docker images para buscar todas las imagenes
+
+docker images --filter=reference='*:1.0' para filtrar una imagen con un tag 1.0
+
+docker images --no-trunc ---> PAra que aparezca completo el imagen id
+
+docker image tag <nombre de imagen>:tag <NuevoNOmbreImagen>:tag  --------> Sirve para crear una nueva imagen con nombre y tag de una imagen ya creada 
+
+docker ps --> Lista de contenedores
+
+docker ps --size --lista con el tamaño del contenedor
+
+docker stop --> parar un contenedor
+
+docker stats
+
