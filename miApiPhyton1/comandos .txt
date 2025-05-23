@@ -1,0 +1,69 @@
+Aquí tienes una API REST sencilla en Python usando Flask. Incluye rutas para obtener todos los usuarios, obtener uno por ID y agregar un nuevo usuario.
+
+Para ejecutarla:
+
+Asegúrate de tener Flask instalado:
+
+bash
+Copiar
+Editar
+pip install flask
+Guarda el código en un archivo, por ejemplo api.py, y ejecútalo:
+
+bash
+Copiar
+Editar
+python api.py
+Luego puedes acceder a:
+
+GET /usuarios — lista todos los usuarios.
+
+GET /usuarios/1 — muestra un usuario específico.
+
+POST /usuarios — agrega un nuevo usuario (enviar JSON como {"nombre": "Pedro"}).
+
+¿Quieres agregar más funcionalidades como edición o eliminación de usuarios?
+
+
+
+
+
+
+
+Tú dijiste:
+con que comando ejecuto el api
+
+
+ChatGPT Plus
+Para ejecutar la API REST que te proporcioné, sigue estos pasos:
+
+✅ 1. Guarda el código en un archivo
+Por ejemplo, guárdalo como api.py.
+
+✅ 2. Abre una terminal y asegúrate de estar en la misma carpeta donde está api.py.
+✅ 3. Instala Flask (si no lo tienes ya):
+bash
+Copiar
+Editar
+pip install flask
+✅ 4. Ejecuta el archivo con Python:
+bash
+Copiar
+Editar
+python api.py
+🔍 Resultado
+Verás algo como:
+
+csharp
+Copiar
+Editar
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Puedes ahora visitar http://127.0.0.1:5000/usuarios en tu navegador o usar herramientas como Postman o curl para probar los endpoints.
+
+¿Te gustaría que te dé ejemplos de cómo hacer peticiones con curl o Postman?
+
+
+
+
+
+
